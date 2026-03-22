@@ -19,8 +19,8 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install @capacitor/core @capacitor/cli @capacitor/android
-          # If you have a package.json, use: npm install
-
+name: Build web assets
+run: npm run build
       - name: Initialize Capacitor (If not already done)
         run: |
           npx cap init "MyCalculator" "com.example.calculator" --web-dir .
